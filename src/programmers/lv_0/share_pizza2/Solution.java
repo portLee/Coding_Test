@@ -1,4 +1,4 @@
-package lv_0.share_pizza2;
+package programmers.lv_0.share_pizza2;
 
 public class Solution {
     public int solution(int n) {

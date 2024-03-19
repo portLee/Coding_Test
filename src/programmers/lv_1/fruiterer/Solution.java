@@ -1,4 +1,4 @@
-package lv_1.fruiterer;
+package programmers.lv_1.fruiterer;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package lv_0.addition_of_fractions;
+package programmers.lv_0.addition_of_fractions;
 
 public class Solution {
     /* 분수의 덧셈 */

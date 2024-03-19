@@ -1,15 +1,15 @@
-package lv_0.share_pizza3;
+package programmers.lv_0.share_pizza1;
 
 public class Solution {
-    public int solution(int slice, int n) {
-        return (n % slice == 0) ? n / slice : n / slice + 1;
+    public int solution(int n) {
+        return (n % 7 == 0) ? n / 7 : n / 7 + 1;
     }
 }
 
 class Test {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int answer = solution.solution(4, 12);
+        int answer = solution.solution(3);
         System.out.println("result = " + answer);
     }
 }

@@ -1,4 +1,4 @@
-package lv_0.remove_0;
+package programmers.lv_0.remove_0;
 
 public class Solution {
     /* 0떼기 */

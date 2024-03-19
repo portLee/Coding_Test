@@ -1,6 +1,4 @@
-package lv_0.Find_the_median;
-
-import java.util.Arrays;
+package programmers.lv_0.Find_the_median;
 
 public class Solution {
     public int solution(int[] array) {

@@ -1,4 +1,4 @@
-package lv_0.double_the_array;
+package programmers.lv_0.double_the_array;
 
 import java.util.Arrays;
 

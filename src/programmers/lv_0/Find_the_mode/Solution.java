@@ -1,6 +1,4 @@
-package lv_0.Find_the_mode;
-
-import java.util.Map;
+package programmers.lv_0.Find_the_mode;
 
 public class Solution {
     public int solution(int[] array) {

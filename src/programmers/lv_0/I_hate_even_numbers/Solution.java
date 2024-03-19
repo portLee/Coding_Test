@@ -1,4 +1,4 @@
-package lv_0.I_hate_even_numbers;
+package programmers.lv_0.I_hate_even_numbers;
 
 import java.util.Arrays;
 
