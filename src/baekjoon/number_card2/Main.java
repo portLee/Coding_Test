@@ -19,11 +19,15 @@ public class Main {
 
         Arrays.sort(cards);
 
+        StringBuilder stringBuilder = new StringBuilder();
+
         for (int i = 0; i < m; i++) {
             int key = scanner.nextInt();
 
-            System.out.print(upperBound(cards, key) - lowerBound(cards, key) + " ");
+            stringBuilder.append(upperBound(cards, key) - lowerBound(cards, key)).append(" ");
         }
+
+        System.out.println(stringBuilder);
     }
 
     private static int lowerBound(int[] arr, int key) {
