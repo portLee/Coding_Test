@@ -1,6 +1,6 @@
 package programmers.lv_2.target_number;
 
-public class Solution {
+class Solution {
     int[] numbers;
     int target;
     int answer;
@@ -30,7 +30,7 @@ public class Solution {
     }
 }
 
-class Test {
+public class Test {
     public static void main(String[] args) {
         int[] numbers = {1, 1, 1, 1, 1};
         int target = 3;
