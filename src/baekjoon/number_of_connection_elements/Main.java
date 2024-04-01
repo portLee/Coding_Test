@@ -1,5 +1,7 @@
 package baekjoon.number_of_connection_elements;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
@@ -33,7 +35,8 @@ public class Main {
 
         for (int k = 1; k < n + 1; k++) {
             if (!visited[k]) {
-                dfs(k);
+//                dfs(k);
+                bfs(k);
                 count++;
             }
         }
@@ -47,6 +50,23 @@ public class Main {
         for (int next = 1; next < n + 1; next++) {
             if (maps[node][next] == 1 && !visited[next]) {
                 dfs(next);
+            }
+        }
+    }
+
+    private static void bfs(int node) {
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(node);
+        visited[node] = true;
+
+        while (!queue.isEmpty()) {
+            int curNode = queue.poll();
+
+            for (int nextNode = 1; nextNode < n + 1; nextNode++) {
+                if (maps[curNode][nextNode] == 1 && !visited[nextNode]) {
+                    visited[nextNode] = true;
+                    queue.offer(nextNode);
+                }
             }
         }
     }
