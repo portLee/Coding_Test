@@ -40,7 +40,7 @@ public class Main {
                 int ny = y + dy[nd];
                 int nx = x + dx[nd];
 
-                if (ny >= 0 && ny < n && nx >= 0 && ny < m) {
+                if (ny >= 0 && ny < n && nx >= 0 && nx < m) {
                     if (maps[ny][nx] == 0) {
                         d = nd;
                         y = ny;
@@ -56,7 +56,7 @@ public class Main {
                 int ny = y - dy[d];
                 int nx = x - dx[d];
 
-                if (ny >= 0 && ny < n && nx >= 0 && ny < m) {
+                if (ny >= 0 && ny < n && nx >= 0 && nx < m) {
                     if (maps[ny][nx] != 1) {
                         y = ny;
                         x = nx;
